@@ -26,6 +26,6 @@ wstool init
 
 # Merge the cartographer_ros.rosinstall file and fetch code for dependencies.
 wstool merge ../../cartographer_ros/cartographer_ros.rosinstall
-wstool set cartographer -v ${CARTOGRAPHER_VERSION} -y
-wstool remove cartographer_ros
-wstool update
+# wstool set cartographer -v ${CARTOGRAPHER_VERSION} -y
+# wstool remove cartographer_ros
+wstool update -t .
